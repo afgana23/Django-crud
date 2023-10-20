@@ -1,0 +1,41 @@
+
+{% include "base.html" %}
+
+    {% block content %} 
+       <section id="main-page">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nostrum earum cumque ipsum! Nobis blanditiis unde quisquam tempora quos veniam nesciunt sint! Inventore quas harum necessitatibus culpa quibusdam nulla nisi quod asperiores. Aut, dolorem.
+                        <picture>
+                            <source srcset="..." type="image/svg+xml">
+                            <img src="..." class="img-fluid img-thumbnail" alt="...">
+                          </picture>
+                            
+                     </div>      
+
+                       
+                  
+                        <div class="col-md-4">
+                            <div class="form-side">        
+                                <h6 class="text-danger">Enter The Users Informations</h6>
+                                   <form method="post" action="{% url 'newsave' %}">
+                                        {% csrf_token %}
+                                         {{form.as_p}}
+                                        <button type="submit">save</button>
+              
+                                    </form>
+             
+                                </div>
+
+                        </div>
+          
+        
+                 </div>
+            </div>
+        </section>
+
+       
+    {% endblock %}
+  
+   

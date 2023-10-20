@@ -1,0 +1,61 @@
+#main-page{
+    padding: 85px 45px;
+}
+.navbar-brand{
+    font-size: 24px;
+    color: rgba(246, 255, 0, 0.877);
+    font-weight: 600;
+}
+ 
+.navbar{
+    background-color: rgb(95, 7, 143);
+}
+.nav-item a{
+    color: #ffffffe6;
+    font-size: 18px;
+}
+.nav-item a:hover{
+    color: tomato;
+    font-size: 19px;
+}
+.btn{
+  text-transform: capitalize;
+
+
+
+
+}
+.table th{
+    text-transform: uppercase;
+    background-color: rgb(205, 161, 218);
+}
+.table td{
+    text-transform: capitalize;
+}
+/*save page*/
+.form-save{
+    width: 300px;
+        border: 10px solid rgb(123, 9, 154);
+        padding: 50px;
+        margin: 60px;
+}
+.form-save button{
+    background-color: chocolate;
+    color: aliceblue;
+    border-radius: 10%;
+    border-color: orangered;
+}
+.form-side{
+    max-width: 300px;
+      
+        border: 10px solid rgb(123, 9, 154);
+        padding: 60px;
+        margin: 10px;
+}
+.form-side button{
+    background-color: chocolate;
+    color: aliceblue;
+    border-radius: 10%;
+    border-color: orangered;
+}
+

@@ -1,0 +1,26 @@
+
+{% include "base.html" %}
+
+    {% block content %} 
+    <section id="main-page">
+                   <table class="table table-bordered border-primary" >
+                          <tr>
+                            <th>username</th>
+                            <th>email</th>
+                             <th>Password</th>
+                          </tr>
+                      {% for n in dbdata %}
+                            <tr>
+                              <td>{{n.username}}</td>
+                               <td>{{n.email}}</td>
+                              <td>{{n.password}}</td>
+                              <td><a class="btn btn-primary"  href="{% url 'editdata' n.id %}">   update</td></a>
+                              <td><a class="btn btn-primary"  href="{% url 'deleteitem' n.id  %}">  Deleta</td></a> </td>
+                          
+                            </tr>
+                      {% endfor %}
+                   </table>
+                  </section>   
+       {% endblock %}
+  
+
